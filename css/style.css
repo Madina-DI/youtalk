@@ -271,19 +271,49 @@ body {
     line-height: 24px; /* 150% */
 }
 
-.article-quote-text-image {
-    width: 55.78px;
-    height: 36px;
-    flex-shrink: 0;
-    fill: var(--text-primary, #333);
-    opacity: 0.06;
-    /* background-image: url(/images/jpeg/Vector.jpg); */
-}
-
 main {
     padding-left: 120px;
     padding-right: 120px;
     width: 1200px;
+}
+
+.aritcle-quote-image {
+    background-size: 55.78px 36px;
+    background-position: 24px 24px;
+    background-image: url('../images/png/Vector.png');
+    background-repeat: no-repeat; 
+}
+
+.green-bullet {
+    list-style-type: none; /* Remove default bullets */
+}
+
+/* Target only direct <li> children of .green-bullet */
+.green-bullet-li {
+    background-image: url('../images/png/bullet.png');
+    background-repeat: no-repeat;
+    background-size: 24px 24px; /* Set the size of the bullet image */
+    background-position: 0 center; /* Align the bullet vertically centered with the text */
+    padding-left: 30px; /* Space for the bullet image, adjust as needed */
+    margin-bottom: 5px; /* Optional: Add some space between list items */
+    line-height: 24px; /* Match the line-height with the bullet image height */
+}
+
+.no-bullet {
+    background-image: none; /* Remove the custom bullet */
+    padding-left: 30px; /* Match the padding of the other <li> elements */
+}
+
+.padding-left-60 {
+    padding-left: 60px;
+}
+
+.padding-left-90 {
+    padding-left: 90px;
+}
+
+.padding-left-120 {
+    padding-left: 120px;
 }
 
 .big-articles-container {
