@@ -3,7 +3,7 @@ body {
     display: grid;
 }
 
-.main-nav {
+.main-nav-basic {
     display: flex;
     gap: 8px;
     margin-left: 126px;
@@ -13,7 +13,7 @@ body {
 .main-nav-basic-page {
     display: flex;
     align-items: center;
-    gap: 8px;
+    /* gap: 4px; */
 }
 
 .main_basic_page {
@@ -25,15 +25,15 @@ body {
 .main-nav-icon {
     display: flex;
     width: 16px;
-    align-items: center;
+    justify-content: center;
 }
 
-.main-nav-icon-inside {
+/* .main-nav-icon-inside {
     width: 9.375px;
     height: 4.688px;
     border: 1px; 
     align-items: center;
-}
+} */
 
 /* .main-nav-icon-outside { */
     /* width: 20px; */
@@ -44,7 +44,7 @@ body {
 .main-nav-blog-page {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
  
 .logo {
@@ -122,16 +122,14 @@ body {
     gap: 8px;
 }
 
-/* .main-nav-basic-page {} */
-
 .main_basic_page {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 4px;
     padding: 0px 8px 4px;
     box-sizing: border-box;
     width: 71px;
-    height: 18px;
+    /* height: 18px; */
 }
 
 .main_basic_page_icon {
@@ -162,6 +160,12 @@ body {
    font-style: normal;
    font-weight: 700;
    line-height: 56px; /* 116.667% */
+}
+
+main {
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 1200px;
 }
 
 .article {
@@ -207,10 +211,6 @@ body {
     margin-right: 8px;
 }
 
-.blog-article-date {
-
-}
-
 .blog-article-image {
     display: flex;
 }
@@ -220,7 +220,9 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 588px;
-    height: 274px;
+    /* height: 274px; */
+    gap: 16px;
+
 }
 
 .article-content {
@@ -234,6 +236,7 @@ body {
 }
 
 .article-text-content {
+    display: flex;
     color: #333;
     font-family: Montserrat sans-serif;
     font-size: 16px;
@@ -247,8 +250,6 @@ body {
     /* margin-left: 20px; Нижний отступ после <br> */
 /* } */
 
-.article-text {}
-
 .article-quote {
     border-radius: 16px;
     background: var(--blue-b-80, #F3F7FE);
@@ -261,6 +262,13 @@ body {
     gap: 8px;
 }
 
+.aritcle-quote-image {
+    background-size: 55.78px 36px;
+    background-position: 24px 24px;
+    background-image: url('../images/png/Vector.png');
+    background-repeat: no-repeat; 
+}
+
 .article-quote-text {
     width: 642px;
     color: var(--text-primary, #333);
@@ -271,17 +279,41 @@ body {
     line-height: 24px; /* 150% */
 }
 
-main {
-    padding-left: 120px;
-    padding-right: 120px;
-    width: 1200px;
+.article-text-title {
+    display: flex;
+    width: 690px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;   
 }
 
-.aritcle-quote-image {
-    background-size: 55.78px 36px;
-    background-position: 24px 24px;
-    background-image: url('../images/png/Vector.png');
-    background-repeat: no-repeat; 
+.article-text-title-anxiety {
+    color: var(--text-primary, #333);
+    /* H3 24:32 */
+   font-family: Montserrat sans-serif;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 32px; /* 133.333% */
+   /* padding-left: 30px; */
+   margin-top: 24px;
+   margin-bottom: 0px;
+   padding: 0px;
+
+}
+
+.article-text-anxiety {
+    color: var(--text-primary, #333);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .green-bullet {
@@ -293,7 +325,7 @@ main {
     background-image: url('../images/png/bullet.png');
     background-repeat: no-repeat;
     background-size: 24px 24px; /* Set the size of the bullet image */
-    background-position: 0 center; /* Align the bullet vertically centered with the text */
+    /* background-position: 0 center; Align the bullet vertically centered with the text */
     padding-left: 30px; /* Space for the bullet image, adjust as needed */
     margin-bottom: 5px; /* Optional: Add some space between list items */
     line-height: 24px; /* Match the line-height with the bullet image height */
@@ -314,6 +346,94 @@ main {
 
 .padding-left-120 {
     padding-left: 120px;
+}
+ 
+.article-title-h3 {
+    display: flex;
+    width: 690px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 16px; */
+    margin-bottom: 40px;
+}
+
+.article-title-h3-text {
+    color: var(--text-primary, #333);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.image-above {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 691px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    margin-right: 0px;
+}
+
+.image-above-text {
+    color: #868686;
+    /* xl/ text 3 */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.25px;
+    margin: 0px;
+}
+
+.big-article-image {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: 691px;
+}
+
+.big-article-text {
+    color: var(--text-primary, #333);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.big-article-text-image {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.big-article-text-image-icon {
+    position: absolute;
+    z-index: 1;
+    width: 240px;
+    height: 168px;
+    padding: 24px 121px 48px 123px;
+    /* margin: 24px; */
+}
+
+.big-article-text-image-text {
+    z-index: 2;
+    /* position: absolute; */
+    width: 485px;
+    color: var(--text-primary, #333);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
 
 .big-articles-container {
