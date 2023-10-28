@@ -1,20 +1,8 @@
+
 body {
     justify-content: center;
     display: grid;
 }
-
-@media (max-width: 320px) {
-}
-
-@media (max-width: 414px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 1024px) {
-}
-
 
 .logo {
     margin-right: 51px;
@@ -120,22 +108,6 @@ body {
     padding: 0px 8px 4px;
     box-sizing: border-box;
     width: 71px;
-    /* height: 18px; */
-}
-
-.blog {
-    display: flex;
-    justify-content: flex-start;
-    width: 552px;
-    height: 56px;
-    margin: 30px 768px 38px 120px;
-    color: var(--text-primary, #333);
-    
-   font-family: Montserrat sans-serif;
-   font-size: 48px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 56px;
 }
 
 main {
@@ -283,9 +255,9 @@ main {
 
 .sidebar-container-Liliy-image {
     width: 120px;
-  height: 120px;
-  flex-shrink: 0;
-  position: relative;
+height: 120px;
+flex-shrink: 0;
+position: relative;
 }
 
 .sidebar-container-Liliya-ellipse {
@@ -338,9 +310,9 @@ main {
 
 .liliya {
     width: 100%;
-  height: 100%;
+height: 100%;
     object-fit: cover;
-   clip-path: ellipse(50% 50%); /* Use ellipse clip-path to make it round */
+clip-path: ellipse(50% 50%); /* Use ellipse clip-path to make it round */
 }
 
 .sidebar-container-Liliya-psychologist {
@@ -720,15 +692,15 @@ main {
 .article-text-title-anxiety {
     color: var(--text-primary, #333);
     /* H3 24:32 */
-   font-family: Montserrat sans-serif;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 32px; /* 133.333% */
-   /* padding-left: 30px; */
-   margin-top: 24px;
-   margin-bottom: 0px;
-   padding: 0px;
+font-family: Montserrat sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+/* padding-left: 30px; */
+margin-top: 24px;
+margin-bottom: 0px;
+padding: 0px;
 
 }
 
@@ -778,7 +750,7 @@ main {
 .padding-left-120 {
     padding-left: 120px;
 }
- 
+
 .article-title-h3 {
     display: flex;
     width: 690px;
@@ -1118,7 +1090,7 @@ main {
     width: 1440px;
     height: 302px;
     padding: 40px 120px 41px 120px;
-   }
+}
 
 .footer { 
     display: grid;
