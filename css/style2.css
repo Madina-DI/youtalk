@@ -9,6 +9,8 @@ body {
     /* margin-left: 120px; */
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 51px;
+    max-height: 36px;
 }
 
 .nav_menu {
@@ -54,6 +56,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    max-width: 190px;
+    max-height: 20px;
 }
 
 .separate {
@@ -175,8 +179,8 @@ main {
     padding-top: 82px; 
     padding-right: 30px;
     padding-left: 16px;
-    width: 198px;
-    /* height: 200px; */
+    max-width: 198px;
+    max-height: 200px;
     transform: rotate(360deg);
     flex-shrink: 0;
     fill: #FFE36B;
@@ -184,15 +188,16 @@ main {
 
 .sidebar-main-images-around {
     padding-left: 50px;
-    width: 152.738px;
+    max-width: 152.738px;
+    max-height: 132,15px;
     flex-shrink: 0;
     fill: #0063A8;
 }
 
 .sidebar-main-images-picture {
     padding-top: 48px;
-    width: 257px;
-    height: 257px;
+    max-width: 257px;
+    max-height: 257px;
     flex-shrink: 0;
 }
 
@@ -288,6 +293,8 @@ position: relative;
     padding: 0px 6px;
     border-radius: 6px;
     background: rgba(243, 244, 248, 0.70);
+    max-width: 16px;
+    max-height: 24px;
 }
 
 .sidebar-container-icon-cam {
@@ -306,6 +313,8 @@ position: relative;
     border-radius: 6px;
     background: rgba(243, 244, 248, 0.70);
     align-self: flex-start;
+    max-width: 16px;
+    max-height: 24px;
 }
 
 .liliya {
@@ -404,25 +413,6 @@ clip-path: ellipse(50% 50%); /* Use ellipse clip-path to make it round */
     padding: 0px;
 }
 
-.sidebar-container-Liliya-button {
-    border-radius: 4px;
-    background: var(--primary-400, #35B3A9);
-    display: flex;
-    padding: 12px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 150% */
-    border: 0px;
-}
-
 .sidebar-container-give-care {
     width: 282px;
     height: 292px;
@@ -434,8 +424,8 @@ clip-path: ellipse(50% 50%); /* Use ellipse clip-path to make it round */
     display: flex;
     border-radius: 16px;
     background: #2963A3;
-    width: 282px;
-    height: 292px;
+    max-width: 282px;
+    max-height: 292px;
 }
 
 .sidebar-give-care {
@@ -615,6 +605,8 @@ clip-path: ellipse(50% 50%); /* Use ellipse clip-path to make it round */
 
 .blog-article-image {
     display: flex;
+    max-width: 690px;
+    max-height: 331px;
 }
 
 .article-text {
@@ -863,6 +855,11 @@ padding: 0px;
     grid-template-columns: 1fr 1fr;
 }
 
+.big-article-image-woman img {
+    max-width: 282px;
+    max-height: 380px;
+}
+
 .article-exercise {
     display: flex;
     padding: 24px;
@@ -927,6 +924,10 @@ padding: 0px;
     gap: 24px;
 }
 
+.article-text-images-both img {
+    max-width: 333px;
+    max-height: 235px;
+}
 .image-icon {
     display: flex;
     width: 178.75px;
@@ -1087,15 +1088,15 @@ padding: 0px;
 .main-footer { 
     box-sizing: border-box;
     background-color: #2963A3;
-    width: 1440px;
-    height: 302px;
+    max-width: 1440px;
+    max-height: 302px;
     padding: 40px 120px 41px 120px;
 }
 
 .footer { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1200px;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -1131,7 +1132,7 @@ padding: 0px;
     font-style: normal;
     font-weight: 700;
     line-height: 26px; /* 144.444% */
-    width: 356px;
+    max-width: 356px;
     height: auto;
     margin: 0px;
 }
@@ -1142,7 +1143,7 @@ padding: 0px;
     border-radius: 4px;
     border: 0px solid rgba(157, 157, 157, 0.20);
     background: #FFF;
-    width: 384px;
+    max-width: 384px;
     /* height: 48px; */
     padding: 0px;
 }
@@ -1181,7 +1182,7 @@ padding: 0px;
     line-height: 18px; /* 150% */
     letter-spacing: 0.25px;
     opacity: 0.4;
-    width: 486px;
+    max-width: 486px;
     height: auto;
     margin: 0px;
 }
@@ -1195,7 +1196,7 @@ padding: 0px;
 }
 
 .footer-line {
-    width: 1200px;
+    max-width: 1200px;
     background-color: #9d9d9d;
     height: 1px;
     margin-top: 24px;
@@ -1240,4 +1241,10 @@ padding: 0px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    body {
+        max-width: 1024px;
+    }
 }
