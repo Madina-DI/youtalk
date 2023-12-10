@@ -292,13 +292,11 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 24px;
     max-width: 384px;
-    /* max-height: 475px; */
     gap: 24px;
 }
 
 .average-articles-container img{
     max-width: 384px;
-    /* max-height: 260px; */
     border-radius: 16px 16px 0px 0px;
 }
 
@@ -321,7 +319,6 @@ main {
  }
 
 .article-txt-container-two {
-    /* display: grid; */
     border: solid 1px #DEDEDE;
     border-radius: 0px 0px 16px 16px;
     color: var(--text-primary, #333);
@@ -498,7 +495,7 @@ main {
 .footer { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+    width: 1200px;
     height: auto;
 }
 
@@ -506,8 +503,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    max-width: 310px;
-    /* max-height: 184px; */
+    width: 310px;
     gap: 93px;
 }
 
@@ -516,16 +512,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    max-width: 111px;
-    height: 184px;
+    width: 111px;
 }
 
 .menu-footer-blog-info {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    max-width: 106px;
-    max-height: auto;
+    width: 106px;
+    height: auto;
 }
 
 .menu-footer-txt {
@@ -540,7 +535,6 @@ main {
 .menu-footer-mail { 
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 8px;
 }
 
@@ -586,26 +580,25 @@ main {
     flex-shrink: 0;
     border-radius: 4px;
     background-color: #16C8BB;
-    max-width: 24px;
-    max-height: 20px;
+    width: 24px;
+    height: 20px;
 }
 
 .footer-text {
     color: #FFF;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 18px; /* 150% */
     letter-spacing: 0.25px;
     opacity: 0.4;
-    max-width: 486px;
-    height: auto;
+    width: 486px;
     margin: 0px;
 }
 
 .social-footer-SK {
     display: flex;
-    max-width: 221px;
-    max-height: 50px;  
+    width: 221px;
+    height: 50px;  
 }
 
 .social-footer-networks {
@@ -618,8 +611,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px;
-    max-width: 221px;
-    max-height: 122px;
+    width: 221px;
+    height: 122px;
     justify-self: flex-end;
 }
 
@@ -818,33 +811,36 @@ main {
     }
 
     .main-footer {
+        padding: 40px 26px 17px 38px;
+    }
+
+    .footer {
         width: 1024px;
-        padding: 40px 26px 78px 38px;
     }
 
     .menu-footer {
         gap: 30px;
-        max-width: 247px;
-        /* max-height: 184px; */
+        width: 247px;
     }
 
     .menu-footer-mail {
-        max-width: 450px;
+        width: 450px;
     }
 
     .menu-footer-mail input {
-        max-width: 200px;
+        width: 200px;
     }
 
     .footer-text {
-        max-width: 450px;
+        width: 450px;
     }
 
     .social-footer {
-    max-width: 300px;
-    margin-right: 10px;
+    width: 300px;
     }
 }
+
+
 @media screen and (max-width: 768px) {
     body {
         width: 768px;
@@ -863,12 +859,6 @@ main {
         flex-direction: column;
     }
     
-    /* .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #03B2A5;
-        margin: 4px 0;
-    } */
 
     .main-nav {
         width: 637px;
@@ -895,12 +885,7 @@ main {
         width: 728px;
         padding-left: 20px;
         padding-right: 20px; 
-        /* height: 3551px; */
     }
-
-    /* .big-articles-container img{
-        max-width: 728px;
-    } */
 
     .image {
         width: 728px;
@@ -932,10 +917,6 @@ main {
     .article-container-two {
         width: 352px;
     }
-
-    /* .image-small {
-        width: 352px;
-    } */
     
     .article-txt-container-two {
         max-width: 352px;
@@ -1003,7 +984,7 @@ main {
 
     .footer {
         grid-template-columns: 278px 1fr;
-        max-width: 768px;
+        width: 768px;
     }
 
     .social-footer {
@@ -1015,78 +996,91 @@ main {
         margin-right: 31px;
     }
 
-    .menu-footer-mail {
-        align-items: start;
-    }
-
     .footer-line {
         width: 728px;
     }
 
     .average-articles-container {
         grid-template-columns: 1fr 1fr;
-        /* gap: 24px; */
     }
 
     .article-container-how-to-manage {
         display: grid;
         grid-template-columns: 1fr;
     }
+
 @media screen and (max-width: 414px) {
-        .nav-mobile-menu {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* .bar {
-            width: 25px;
-            height: 3px;
-            background-color: #03B2A5;
-            margin: 4px 0;
-        } */
+    .nav-mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
     
-        .main-nav {
-            gap: 278px;
-            width: 366px;
-        }
+    .main-nav {
+        gap: 278px;
+        width: 366px;
+    }
 
-        .separate {
-            width: 414px;
-        }
+    .separate {
+        width: 414px;
+    }
 
-        .blog-nav-icon:nth-child(3),
-        .blog-nav-icon:nth-child(4),
-        .blog-nav-icon:nth-child(5),
-        .blog-nav-icon:nth-child(6),
-        .blog-nav-icon:nth-child(7),
-        .blog-nav-icon:nth-child(8),
-        .blog-nav-icon:nth-child(9) {
+    .blog-nav-icon:nth-child(3),
+    .blog-nav-icon:nth-child(4),
+    .blog-nav-icon:nth-child(5),
+    .blog-nav-icon:nth-child(6),
+    .blog-nav-icon:nth-child(7),
+    .blog-nav-icon:nth-child(8),
+    .blog-nav-icon:nth-child(9) {
         display: none;
     }
 
-        .big-articles-container {
-            max-width: 374px;
-        }
-
-        .article-container {
-            max-width: 374px;
-        }
-
-        .image {
-            width: 374px;
-        }
-
-        .main-blog-nav {
-            width: 400px;
-        }
-
-        .average-articles-container {
-            grid-template-columns: 1fr;
-        }
-
+    .big-articles-container {
+        max-width: 374px;
     }
 
+    .article-container {
+        max-width: 374px;
+    }
 
+    .image {
+        width: 374px;
+    }
 
+    .main-blog-nav {
+        width: 400px;
+    }
+
+    .average-articles-container {
+        grid-template-columns: 1fr;
+    }
+
+    .average-articles-container img {
+        
+    }
+
+    .article-txt-container-two {
+        width: 374px;
+    }
+
+    .article-container-two 
+    .article-container-how-to-manage 
+    .article-img-container-two {
+        display: none;
+    }
+
+    .article-container-three 
+    .small-article-container-emotional-burnout {
+        display: none;
+    }
+
+    .article-container-three 
+    .small-article-container-anxiety {
+        display: none;
+    }
+
+    .article-container-three 
+    .small-article-container-how-to-manage {
+        display: none;
+    }
 }
 
