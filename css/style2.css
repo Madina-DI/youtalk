@@ -3,6 +3,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .main-nav {
@@ -12,7 +13,6 @@ body {
     margin-top: 16px;
     margin-right: 120px;
     justify-content: space-between; 
-    /* gap: 286px; */
     width: 1200px;
 }
 
@@ -45,7 +45,6 @@ body {
 .nav-button-text {
     display: flex;
     justify-content: flex-end;
-    /* margin: 14px 120px; */
 }
 
 .nav-button {
@@ -134,31 +133,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-/* .sidebar-main-container {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 48px;
-    margin-bottom: 24px;
-} */
-
-/* .sidebar-main {
-    background-image: url("../images/svg/RectangleSidebar.svg");
-    background-repeat: no-repeat;
-    background-size: 282px 512px;
-    padding: 24px;
-    display: flex;
-    width: 234px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 24px;
-} */
-
-/* * {
-    margin: 0;
-    padding: 0;
-  } */
   
 .block {
     margin-bottom: 24px;
@@ -189,7 +163,7 @@ main {
 
 .block__cart-text {
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     margin-bottom: 24px;
@@ -389,6 +363,9 @@ main {
     width: 282px;
     height: 292px;
     margin-bottom: 42px;
+    background-size: center 70%;
+    background-position: 100%;
+    background-repeat: no-repeat;
 }
 
 .sidebar-container-eight-video {
@@ -404,7 +381,7 @@ main {
     flex-shrink: 0;
     height: 304px;
     background-image: url(/images/svg/MaskGroup.svg);
-    background-size: 100%;
+    background-size: 100%; 
     background-position: 100%;
     background-repeat: no-repeat;
 }
@@ -510,6 +487,13 @@ main {
     margin-left: 200px;
 }
 
+.blog-article-point-adapive {
+    display: none;
+}
+.blog-article-text-adapive {
+    display: none;
+}
+
 .article-container {
     grid-column: 1;
     grid-row: 1;
@@ -530,12 +514,11 @@ main {
     color: var(--text-primary, #333);
     text-overflow: ellipsis;
     whitespace: nowrap;
-    /* H1 48:56 */
     font-family: Montserrat sans-serif;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px; /* 116.667% */
+    line-height: 56px; 
     margin: 0px;
 }
 
@@ -576,7 +559,7 @@ main {
     justify-content: flex-start;
     width: 588px;
     gap: 16px;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 .article-text-content {
@@ -584,7 +567,6 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     width: 588px;
-    gap: 16px;
     margin: 0px;
 }
 
@@ -594,7 +576,7 @@ main {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 20px; 
     margin-bottom: 16px;
 }
 
@@ -667,10 +649,10 @@ main {
     font-weight: 500;
     line-height: 24px; 
     gap: 16px;
-    margin-bottom: 24px;
     padding: 0px;
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
 }
 
 .green-bullet {
@@ -683,7 +665,7 @@ main {
     background-size: 24px 24px; 
     padding-left: 30px;
     margin: 0px;
-    line-height: 24px;
+    line-height: 20px;
 }
 
 .no-bullet {
@@ -751,7 +733,6 @@ main {
     font-weight: 400;
     line-height: 130%; 
     letter-spacing: 0.25px;
-    margin: 0px;
 }
 
 .big-article-image {
@@ -820,11 +801,27 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+    width: 691px;
+    height: 380px;
 }
 
 .big-article-image-woman {
-    max-width: 282px;
-    max-height: 380px;
+    background-image: url(/images/png/Woman_image.png);
+    background-size: 282px 380px;
+    background-repeat: no-repeat;
+}
+
+.big-article-image-hand {
+    background-image: url(/images/png/Hand_image.png);
+    background-size: 294px 182px;
+    background-repeat: no-repeat;
+} 
+
+.big-article-image-hand-text {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 174px;
 }
 
 .article-exercise {
@@ -868,7 +865,6 @@ main {
 
 .article-text-bullet {
     width: 572px;
-    height: 96px;
 }
 
 .article-text-bullet-anxiety {
@@ -887,7 +883,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    color: var(--text-primary, #333);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .article-text-images-both img {
@@ -1077,8 +1078,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    max-width: 111px;
-    height: 184px;
+    width: 111px;
+    height: auto;
 }
 
 .menu-footer-blog-info {
@@ -1238,11 +1239,13 @@ main {
     .article-text-images-both img {
         width: 345px;        
     }
-
     .separate {
         width: 1024px;
     }
-
+    .blog-article-point-adapive {
+        padding-right: 8px;
+        margin: 0px;
+    }
     .main-nav-page {
         margin-left: 32px;
         margin-right: 496px;
@@ -1257,30 +1260,37 @@ main {
         line-height: 18px; 
         letter-spacing: 0.25px;
     }
-
-
+    .block__cart {
+        width: 182px;
+        padding: 169px 20px 24px;
+        background-position: center 9%;
+    }
+    .block__cart-title {
+        margin-top: 24px;    
+    }
+    .block__cart-text {
+        margin: 11px 0px 24px 0px;
+    }
+    .block__cart-btn {
+        height: 48px;
+    }
     .big-article-image-woman-text {
         gap: 16px;
     }
-
     .sidebar-container {
         margin-left: 24px;
     }
-
     .sidebar-main {
         width: 182px;
         border-radius: 16px;
     }
-    
     .sidebar-main-container-text {
         width: 182px;
     }
-
     .sidebar-Liliya-button {
         display: flex;
         justify-content: center;
     }
-
     .sidebar-text-panic-atack {
         line-height: 20px;
     }
@@ -1310,11 +1320,20 @@ main {
 
     .sidebar-container-eight-video {
         width: 222px;
-        height: 308px;
+        background-position: bottom;
     }
 
     .sidebar-container-main-video-txt {
+        padding: 24px;
+    }
+
+    .sidebar-container-video-txt {
         width: 174px;
+    }
+
+    .sidebar-container-video-txt-p {
+        width: 174px;
+        height: 100px;
     }
 
     .sidebar-container-video-icon {
@@ -1336,6 +1355,14 @@ main {
 
     .main-blu-line {
         display: none;
+    }
+
+    .sidebar_give {
+        width: 222px;
+        height: 292px;
+        background-size: cover;
+        border-radius: 16px;
+        background-position: 64%;
     }
 
     main {
@@ -1408,6 +1435,19 @@ main {
         width: 666px;
     }
 
+    .article-text-anxiety {
+        font-size: 18px;    
+    }
+
+    .article-text-bullet {
+        width: 691px;
+        line-height: 24px;
+    }
+
+    .article-text {
+        width: 691px;
+    }
+
     .main-footer {
         width: 1024px;
         padding: 40px 26px 78px 38px;
@@ -1429,7 +1469,6 @@ main {
 
     .footer {
         max-width: 960px;
-        /* max-height: 184px; */
     }
 
     .footer-text {
@@ -1458,13 +1497,6 @@ main {
         display: flex;
         flex-direction: column;
     }
-    
-    /* .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #03B2A5;
-        margin: 4px 0;
-    } */
 
     .main-nav {
         gap: 637px;
@@ -1538,7 +1570,6 @@ main {
 
     .average-articles-container {
         grid-template-columns: 1fr 1fr;
-        /* gap: 24px; */
     }
 
     .article-container-how-to-manage {
@@ -1617,64 +1648,439 @@ main {
         width: 356px;
     }
 }
-
-    
-        
-
 @media screen and (max-width: 414px) {
-        .nav-mobile-menu {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* .bar {
-            width: 25px;
-            height: 3px;
-            background-color: #03B2A5;
-            margin: 4px 0;
-        } */
+    body {
+        width: 414px;
+    }
 
-        main {
-            width: 414px;
-        }
-    
-        .main-nav {
-            gap: 278px;
-            width: 366px;
-        }
+    .nav-mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
 
-        .separate {
-            width: 414px;
-        }
+    main {
+        width: 414px;
+    }
 
-        .blog-nav-icon:nth-child(3),
-        .blog-nav-icon:nth-child(4),
-        .blog-nav-icon:nth-child(5),
-        .blog-nav-icon:nth-child(6),
-        .blog-nav-icon:nth-child(7),
-        .blog-nav-icon:nth-child(8),
-        .blog-nav-icon:nth-child(9) {
+    .main-nav {
+        gap: 278px;
+        width: 366px;
+    }
+
+    .separate {
+        width: 414px;
+    }
+
+    .blog-nav-icon:nth-child(3),
+    .blog-nav-icon:nth-child(4),
+    .blog-nav-icon:nth-child(5),
+    .blog-nav-icon:nth-child(6),
+    .blog-nav-icon:nth-child(7),
+    .blog-nav-icon:nth-child(8),
+    .blog-nav-icon:nth-child(9) {
+    display: none;
+    }
+
+    .blog-article-image {
+        width: 374px;
+        height: 207px;
+    }
+
+    .blog-article {
+        width: 374px;
+        font-size: 37px;
+        line-height: 32px;
+    }
+
+    .article-text-title {
+        width: 374px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block__cart {
+        padding: 257px 32px 34px 32px;
+    }
+
+    .main-nav-page {
+        width: 374px;
+    }
+
+    .main-nav-blog-page a {
+        display: block; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        max-width: 220px; 
+    }
+
+    .article-text-with-two-images {
+        flex-direction: column;
+    }
+
+    .aritcle-text-with-two-images {
+        flex-direction: column;
+    }
+
+    .article-text {
+        width: 374px;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    .article-text-content {
+        font-size: 20px;
+    }
+
+    .article-content {
+        font-size: 20px;
+    }
+
+    .article-title-h3 {
+        width: 374px;
+        height: 304px;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .article-text-title {
+        padding-bottom: 24px;
+    }
+
+    .article-title-h3-text {
+        padding-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .article-h3 {
+        padding: 0px;
+    }
+
+    .main-button-text {
         display: none;
-        }
+    }
 
-        .blog-article-image {
-            width: 374px;
-            height: 207px;
-        }
+    .article-quote {
+        width: 342px;
+        height: 186px;
+        padding: 48px 16px 16px;
+    }
 
-        .blog-article {
-            width: 374px;
-            font-size: 32px;
-            line-height: 32px;
-        }
+    .article-quote-text {
+        width: 342px;
+        font-size: 19px;
+        margin: 0px;
+    }
 
-        .article-text-title {
-            width: 374px;
-        }
+    .article-text-bullet {
+        width: 342px;
+    }
 
+    .image-above {
+        width: 374px;
+    }
 
+    .big-article-image {
+        width: 374px;
+        
+    }
+
+    .big-article-text {
+        width: 374px;
+        align-items: flex-start;
+        font-size: 19px;
+    }
+
+    .image-above-text {
+        margin-bottom: 24px;
+    }
+
+    .big-article-text-image-text {
+        width: 374px;
+        font-size: 19px;
+    }
+
+    .big-article-image-woman {
+        height: 380px;
+        width: 91.75%;
+        background-size: cover;
+        background-position: 100%;
+    }
+
+    .big-article-image-hand-text {
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .big-article-image-hand {
+        height: 207px;
+        background-position: 100%;
+        background-size: cover;
+    }
+    
+    .article-text-images-both img {
+        width: 375px;
+    }
+
+    .article-exercise-two {
+        padding: 16px;
+    }
+
+    .article-text-chair {
+        width: 374px;
+        color: var(--text-primary, #333);
+        font-family: Montserrat sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .main-footer {
+        width: 375px;
+        padding: 35px 20px 90px 19px;
+        height: 621px;
+    }
+
+    .big-article-image-woman-text {
+        height: auto;
+        grid-template-columns: 1fr;
+        width: 91%;
+        align-self: start;
+    }
+
+    .article-exercise {
+        padding: 16px;
+    }
+
+    .article-exercise-text {
+        width: 342px;
+        font-size: 19px;
+    }
+
+    .article-text-title-anxiety {
+        margin-top: 0px;
+    }
+
+    .big-article-text-addition {
+        width: 374px;
+        font-size: 19px;
+    }
+
+    .sidebar-Liliya {
+        width: 326px
+    }
+
+    .sidebar_give {
+        width: 374px;
+    }
+
+    .sidebar-container-eight-video {
+        width: 374px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-underline {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .menu-footer {
+        padding-bottom: 23px;
+        margin: 0px;
+        width: 375px;
+        gap: 93px;
+    }
+
+    .social-footer {
+        gap: 20px;
+        max-height: 102px;
+    }
+
+    .menu-footer-mail-button {
+        width: 375px;
+    }
+
+    .footer-text {
+        width: 375px;
+    }
+
+    .main-footer {
+        width: 414px;
+        height: 746px;
+    }
+
+    .sidebar-container {
+        margin-bottom: 127px;
+    }     
 }
+@media screen and (max-width: 320px) {
+    .main-nav {
+        gap: 208px;
+        width: 296px;
+        margin-top: 11px;
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+    .main-nav-blog-page a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
 
+    .logo {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
 
+    .separate {
+        width: 320px;
+    }
 
+    .article {
+        margin-top: 32px;
+    }
+
+    .blog-article {
+        width: 288px;
+        font-size: 24px;
+    }
+
+    .blog-article-image {
+        width: 288px;
+        height: 160px;
+    }
+
+    .article-text-title {
+        padding-bottom: 16px;
+    }
+
+    .article-text-content {
+        width: 288px;
+    }
+
+    .article-text {
+        width: 288px;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .article-title-h3 {
+        width: 288px;
+        gap: 8px;
+        margin-bottom: 40px;
+        height: 330px;
+    }
+
+    .article-text-bullet {
+        width: 256px;
+    }
+
+    .article-quote {
+        width: 256px;
+        height: 248px;
+        padding: 40px 16px 16px;
+        margin-bottom: 16px;
+    }
+
+    .article-quote-text {
+        width: 256px;
+        font-size: 19px;
+        margin: 0px;
+        line-height: 25px;
+    }
+
+    .image-above {
+        width: 288px;
+    }
+
+    .image-above-text {
+        margin-bottom: 16px;
+    }
+
+    .big-article-text {
+        width: 256px;
+    }
+
+    .big-article-image {
+        width: 374px;
+        align-items: start;
+    }
+    .big-article-text-image {
+        justify-content: start;
+    }
+
+    .big-article-text-image-text {
+        width: 288px;
+    }
+    .big-article-image-woman {
+        width: 75.75%;
+    }
+    .big-article-text-addition {
+        width: 256px;
+    }
+    .article-exercise-text {
+        width: 256px;
+    }
+    .big-article-image-hand {
+        width: 288px;
+    }
+    .article-text-images-both img {
+        width: 288px;
+    }
+    .article-text-chair {
+        width: 256px;
+    }
+    .block__cart {
+        padding: 230px 24px 24px 24px;
+        width: 240px;
+        background-size: 88%;
+    }
+    .sidebar-Liliya {
+        width: 240px;
+    }
+    .sidebar_give {
+        margin-bottom: 24px;
+        width: 288px;
+        height: 280px;
+        background-size: cover;
+    }
+
+    .sidebar-container-eight-video {
+        width: 286px;
+    }
+    .sidebar-container-main-video-txt {
+        width: 254px;
+        padding-bottom: 16px;
+    }
+    .sidebar-container-video-txt-p {
+        width: 254px;
+    }
+    .menu-footer {
+        width: 288px;
+        gap: 71px;
+    }
+    .menu-footer-mail-button {
+        width: 272px;
+    }
+    .menu-mail {
+        display: none;
+    }
+    .main-footer {
+        width: 320px;
+        height: 711px;
+        padding: 35px 14px 90px 18px;
+    }
+    .social-footer {
+        margin-top: 5px;
+    }
 }
