@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 1440px;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 .main-nav {
